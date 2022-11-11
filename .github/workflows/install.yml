@@ -4,18 +4,6 @@ env:
   TARGET_PACKAGE: "@${{ github.repository_owner }}/npm-publish-private"
 
 jobs:
-  checkout-and-install:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Execute package
-        run: node .
-
   create-and-install:
     runs-on: ubuntu-latest
 
